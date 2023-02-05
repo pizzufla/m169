@@ -1,4 +1,4 @@
 FROM alpine:3.9
-COPY cmd.sh .
-RUN chmod +x cmd.sh
-CMD ./cmd.sh
+COPY simple-report.sh .
+RUN chmod +x simple-report.sh
+CMD ./simple-report.sh
