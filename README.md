@@ -38,5 +38,5 @@ docker volume ls
 ```
 Container mit Volume anbinden
 ```
-docker run -d --name aContainerWithVolume -v aVolume:/home/benutzer alpine:latest
+docker run -d --name aContainerWithVolume -v aVolume:/app alpine:latest
 ```
