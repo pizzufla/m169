@@ -3,7 +3,7 @@
 Conainer mit Docker laufen lassen
 
 ```
-# Docker pulls and runs nginx image as a webserver
+# Docker holt sich das image aus dem repository und lässt den Webserver NGINX auf Port 80 laufen.
 
 docker run --publish 80:80 --name aWebserver nginx
 
