@@ -1,6 +1,6 @@
 # m169
 
-#Conainer mit Docker laufen lassen
+# Conainer mit Docker laufen lassen
 
 Docker holt sich das image aus dem repository und lässt den Webserver NGINX auf Port 8081 laufen.
 ```
@@ -20,4 +20,23 @@ docker stop aWebserver
 Container wegräumen
 ```
 docker rm aWebserver
+```
+
+# Container und Volumes
+
+Ein Volume erstellen
+```
+docker volume create aVolume
+```
+Volume untersuchen
+```
+docker volume inspect aVolume
+```
+Volumes auflisten
+```
+docker volume ls
+```
+Container mit Volume anbinden
+```
+docker run -d --name aContainerWithVolume -v aVolume:/home/benutzer alpine:latest
 ```
