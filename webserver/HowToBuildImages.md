@@ -15,7 +15,6 @@
     set dockerID=[userID@docker]
     docker login --username %dockerId%
 
-
 ## Image erstellen aus Dockerfile
 
 Voraussetzung ist, dass sie im Verzeichnis ihr *Dockerfile* abgelegt haben
@@ -24,12 +23,12 @@ Voraussetzung ist, dass sie im Verzeichnis ihr *Dockerfile* abgelegt haben
 
     docker build -t $dockerId/theImageName:v1 .
 
-### Erstelltes Image mit zusätzlichem Tag *latest* versehen
+### Bereits erstelltes Image mit zusätzlichem Tag *latest* versehen
 
     docker tag $dockerId/theImageName:v1 $dockerId/theImageName:latest
 
 ## Image ins Repository "pushen" verteilen
 
-### https://hub.docker.com ist das Repository von Docker
+### <https://hub.docker.com> ist das Repository von Docker
 
     docker image push --all-tags $dockerId/theImageName
