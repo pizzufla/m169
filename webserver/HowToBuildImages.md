@@ -4,7 +4,7 @@
 
 ### Linux Shell
 
-    export dockerId [userId@docker]
+    export dockerId=[userId@docker]
     echo $dockerId
     docker login --username $dockerId
     
