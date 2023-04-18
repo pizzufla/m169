@@ -4,6 +4,10 @@ So lassen sich Request-Dauer oder Anzahl Aufrufe auf einer Schnittstelle genau s
 
 Auch die Docker Engine gibt Metriken aus, welche von Prometheus verstanden werden. https://docs.docker.com/config/daemon/prometheus/
 
+<<<<<<< HEAD
+=======
+Installation mit Docker Engine auf Linux
+>>>>>>> refs/remotes/origin/main
 ## Docker Engine Konfiguration
 Im Verzeichnis der Linux VM sind folgende Anpassungen in der Datei **daemon.json** nötig.
 ### Konfiguration in daemon.json
