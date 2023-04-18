@@ -1,6 +1,6 @@
 # Prometheus
 https://prometheus.io zeichnet Metriken auf, also zum Beispiel in Serien von Daten, in Abhängigkeit zur Zeit.
-So lassen sich Request-Dauer oder Anzahl Aufrufe auf einer Schnittstelle genau so messen, Auslastung von Ressourcen.
+So lassen sich Request-Dauer oder Anzahl Aufrufe auf einer Schnittstelle messen, wie auch die Auslastung von Ressourcen.
 
 Auch die Docker Engine gibt Metriken aus, welche von Prometheus verstanden werden. https://docs.docker.com/config/daemon/prometheus
 
