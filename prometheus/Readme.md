@@ -20,5 +20,5 @@ Im Verzeichnis der Linux VM sind folgende Anpassungen in der Datei **daemon.json
     curl <ip_vmdebian>:9323/metrics
 
 ### Starten Container aus Image prometheus  
-    docker run -e DOCKER_HOST=192.168.106.129 -p 9090:9090 dominikreussbzu/prometheus
+    docker run -e DOCKER_HOST=192.168.106.129 -d -p 9090:9090 dominikreussbzu/prometheus
     Ist die richtige IP eingetragen??
