@@ -4,11 +4,10 @@ Installation mit Docker Engine auf Linux
 Im Verzeichnis der Linux VM sind folgende Anpassungen in der Datei **daemon.json** nötig.
 ### Konfiguration in daemon.json
     {
-        "metrics-addr" : "127.0.0.1:9323",
-        "experimental": true
+        "metrics-addr" : "0.0.0.0:9323"
     }
 ### Docker daemon neu starten
     systemctl restart docker.service
 
-### Anpassung ermöglicht die Abfrage der DAten aus der Docker Engine
-    curl localhost:9323/metrics
+### Anpassung ermöglicht die Abfrage der Daten aus der Docker Engine
+    curl <ip_vmdebian>:9323/metrics
