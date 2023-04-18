@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  
+  todo-web:
+    image: dominikreussbzu/todolist
+    ports:
+      - "8020:80"
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    external:
+      name: nat
