@@ -5,28 +5,14 @@ Grafana verwendet dazu Dashboards, welche mit verschiedenen grafischen elementen
 
 
 ## Laboraufbau für die Überwachung ihrer Docker Instanz
-Holen sie sich als erstes eine frische Kopie meines Repos aus github. Wechseln sie in das Verzeichnis, wo sie die bis dato mit meinem Repo m169 auf der VM Debian gearbeitet haben.
+Holen sie sich als erstes eine frische Kopie meines Repos aus github. Wechseln sie in das Verzeichnis, wo sie mein Repo gepullt haben.
 z.B. /home/benutzer/docker/m169
-und führen ein fetch-Kommando aus, um die aktuellen Daten abzurufen:
+und führen ein git pull aus, um die aktuellen Daten abzurufen:
 
     git pull
 
-Im Verzeichnis sollte nun neu ein Unterverzeichnis ./microservices-demo enstanden sein.
+Im Verzeichnis gibt es nun das Unterverzeichnis **./microservices-demo** .
 Wechseln sie genau in dieses Verzeichnis.
-
-### Vorbereitungen
-Script berechigen zur Ausführung:
-
-    chmod +x ./deploy/docker-compose/grafana/import.sh
-Container erzeugen und einmalig mit JSON Konfigurtionen für Grafana-Dashboard versorgen
-
-    docker-compose \
-    -f ./deploy/docker-compose/docker-compose.monitoring.yml \
-    run \
-    --entrypoint /opt/grafana-import-dashboards/import.sh \
-    --rm \
-    importer    
-
 ### Services starten
 Sie befinden sich nun im Unterverzeichnis ./microservoces-demo und starten die Services für das Monitoring mit folgendem Kommando:
     
@@ -59,3 +45,5 @@ Im docker-compose.monitoring.yml finden sie die Ports auf die Services. Verwende
 * Grafana
 
 Das Login für Grafana ist admin und das PW foobar
+
+Weiter geht es auf der Moodle Seite, Aufgabe Grafana
