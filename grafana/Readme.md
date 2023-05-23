@@ -4,7 +4,7 @@ Für das Monitoring benötigt Grafana eine Datasource und kann die Daten (Metrik
 Grafana verwendet dazu Dashboards, welche mit verschiedenen grafischen elementen ausgestattet werden können.
 
 
-##1 Laboraufbau für die Überwachung ihrer Docker Instanz
+## 1 Laboraufbau für die Überwachung ihrer Docker Instanz
 Holen sie sich als erstes eine frische Kopie meines Repos aus github. Wechseln sie in das Verzeichnis, wo sie mein Repo gepullt haben.
 z.B. /home/benutzer/docker/m169
 und führen ein git pull aus, um die aktuellen Daten abzurufen:
@@ -28,7 +28,7 @@ Creating prometheus                    ... done
 Creating docker-compose_grafana_1      ... done
 Creating docker-compose_importer_1     ... done
 
-###2 Einmalige Anpassungen
+### 2 Einmalige Anpassungen
 Script berechtigen zur Ausführung:
 
     chmod +x ./deploy/docker-compose/grafana/import.sh
@@ -41,7 +41,7 @@ Container erzeugen und einmalig mit JSON Konfigurtionen für Grafana-Dashboard v
     --rm \
     importer  
 
-###3 Zugriff auf die Services
+### 3 Zugriff auf die Services
 Im docker-compose.monitoring.yml finden sie die Ports auf die Services. Verwenden sie beim Aufruf die IP ihrer VM Debian und die vorgefundenen Ports für die SErvices:
 * Prometheus
 * Grafana
