@@ -9,6 +9,8 @@ Holen sie sich als erstes eine frische Kopie meines Repos aus github. Wechseln s
 z.B. /home/benutzer/docker/m169
 und führen ein git pull aus, um die aktuellen Daten abzurufen:
 
+    git clone https://github.com/minidok/m169.git 
+    oder aber
     git pull
 
 Im Verzeichnis gibt es nun das Unterverzeichnis **./microservices-demo** .
@@ -46,4 +48,4 @@ Im docker-compose.monitoring.yml finden sie die Ports auf die Services. Verwende
 
 Das Login für Grafana ist admin und das PW foobar
 
-Weiter geht es auf der Moodle Seite, Aufgabe Grafana
+Weiter geht es auf der Moodle Seite, Aufgabe zu Grafana
