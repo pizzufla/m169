@@ -32,4 +32,4 @@ jobs:
           context: ./containerInfo
           file: ./containerInfo/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/containerInfo:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/container-info:latest
