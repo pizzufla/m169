@@ -1,4 +1,4 @@
-name: Docker Image Multi-platform CI
+name: CI-Docker-containerInfo
 
 on:
   workflow_dispatch:
