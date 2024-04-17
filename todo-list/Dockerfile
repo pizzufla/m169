@@ -20,3 +20,8 @@ VOLUME $SQLITE_DATA_DIRECTORY
 USER $SQLITE_USER
 
 COPY --from=builder /out/ .
+
+# app color
+ENV APP_COLOR red
+ENV APP_THEME dark
+

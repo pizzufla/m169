@@ -9,7 +9,7 @@ services:
       - app-net
 
   todo-web:
-    image: dominikreussbzu/todolist
+    image: potatoman27/custom-to-do-list
     ports:
       - "8030:80"
     environment:

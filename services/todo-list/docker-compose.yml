@@ -3,7 +3,7 @@ version: '3.7'
 services:
   
   todo-web:
-    image: dominikreussbzu/todolist
+    image: potatoman27/custom-to-do-list
     ports:
       - "8020:80"
     networks:
